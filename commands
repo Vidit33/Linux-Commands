@@ -7,6 +7,69 @@ clear the command window
 ls
 
 //going into a new directory
-cd (dir_name)
+cd dir_name
 
-//
+//want to see a commands manual
+man cmd 
+for ex. man ls or man cd
+
+//want to create a empty text file
+touch filename.filetype
+
+//read the contents of file
+cat filename.filetype
+
+//delete a file or a directory
+rm filename.filetype
+rm -r filename.filetype
+
+//making a new directory
+mkdir dir_name
+
+//takes u back to the previous directory that u were in
+cd -
+
+//moving a file from one dir to another
+"go to the directory where the file is, i'll take example of home directory"
+mv filename.filetype dest_directory_name/
+
+//copying a file one dir to another
+"go to the directory where the file is, i'll take example of home directory"
+cp filename.filetype dest_directory_name/
+
+//finding a command location or file location
+which cmd 
+    or 
+whereis cmd
+
+//echo something on the command window
+echo "hello, world!"
+        or 
+printf "1\n2\n3"
+
+//redirecting output in a file
+printf "1\n2\n3" > file.txt
+
+//finding a file using a character or string
+grep "string_name"
+
+/***
+    there are few different commands such as piping command
+***\
+// | it's an piping commands, it says that the output of ls -l program, put that into grep program. and we get a final program with ls -l, but with all the lines which has string_name in them
+ls -l | grep "string_name"
+
+//to change file permission
+chmod 755 filename.txt
+
+//to check the history
+history
+
+//killing a program
+kill program_name
+        or
+killall program_name
+
+//killing one time using an cursor
+xkill 
+
