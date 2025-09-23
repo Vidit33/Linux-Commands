@@ -1,0 +1,12 @@
+'''
+clear the command window
+    ctrl+l or clear
+'''
+
+//see the list
+ls
+
+//going into a new directory
+cd (dir_name)
+
+//
