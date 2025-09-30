@@ -107,4 +107,29 @@ dmesg
         //in ur choosed directory
 
 
-added new line
+5. 	//Before pulling/pushing, check that GitHub recognizes your key
+	ssh -T git@github.com
+
+6.	//add the git files in ur file present on ur system
+	git add .
+
+7.	//commit 
+	git commit -m "commit_that u want here"
+
+8.	//push the commit or the changes that u made in the github files
+	git push 
+
+9. 	//pull the changes or the file that u need
+	git pull
+
+10. 	//for checking all the changes u have made
+	git log
+
+11.	//checking the status
+	git status
+
+12. 	//if u want to make small changes in a file, like don't want to open a file u can use:
+	echo "Added new Linux command: top" >> sysdir_name/githubfile.txt
+
+13. 	//
+
