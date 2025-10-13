@@ -142,4 +142,6 @@ step 3, 4, 6, 7, 8
 	git branch feature
 15.	//switch to that branch
 	git switch -C feature
-16.	
+16.	//now for pushing the file to this new branch have to change the origin commit changes
+	git push -u origin feature
+
