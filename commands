@@ -137,3 +137,9 @@ dmesg
 
 // steps to follow for pushing file on git
 step 3, 4, 6, 7, 8
+
+14.	//create a new branch
+	git branch feature
+15.	//switch to that branch
+	git switch -C feature
+16.	
