@@ -155,3 +155,12 @@ Enter the new password when prompted and re-enter it to confirm.
 After the password is updated, type "sync" and then "exec /sbin/init" to reboot the system.
 Once the Raspberry Pi reboots, you can log in with the new password.
 Important: Remember to remove the "init=/bin/sh" entry from the cmdline.txt file on the SD card using the same process as in steps 1-4, otherwise, the system will always boot into the root shell.
+
+
+
+////TUrning on the network manager on Rpi
+sudo systemctl enable NetworkManager
+
+then sudo systemctl start NetworkManager
+
+
