@@ -39,6 +39,9 @@ mv filename.filetype dest_directory_name/
 "go to the directory where the file is, i'll take example of home directory"
 cp filename.filetype dest_directory_name/
 
+//copying file from raspberry pi to your pc using rsync
+rsync -P pi@<pi-ip>:~/path/of/folder ~/path/to/folder
+
 //finding a command location or file location
 which cmd 
     or 
