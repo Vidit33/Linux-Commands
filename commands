@@ -148,6 +148,28 @@ step 3, 4, 6, 7, 8
 16.	//now for pushing the file to this new branch have to change the origin commit changes
 	git push -u origin feature
 
+//commands if git is not working,
+17.	   //check the current remote URL
+	   git remote -v
+	   // if it shows origin https://, then we have to change it to ssh, that process is a bit long and have to go through each step for knowing how to change it.
+18.	   //In that method, First step:- Change it to SSH
+	   git remote set-url origin git@github.com:Vidit33/linux_commands.git
+19.	   //verify the change again
+	   git remote -v
+20.	   //still not working then go to step two:- Try removing and adding the ssh back.
+	   git remote remove origin
+	   git remote add origin git@github.com:Vidit33/Linux-Commands.git
+	   //now again verify
+	   git remote -v
+
+21.	   //still Nothing then Step 3:- checking the global git config
+	   git config --global --get url."https://github.com/".insteadOf
+	   //remove the override
+	   git config --global --unset url."https://github.com/".insteadOf
+	   //Re-Add the remote ssh
+	   git remote remove origin
+	   git remote add origin git@github.com:Vidit33/Linux-Commands.git
+	   //Now it's ready for you to use again
 
 /////How to change password on pi if forgotten
 remove the sd card from pi attach to ur pc, then in the sd card file, go to cmdline.txt and type "init=/bin/sh" after the already written text. eject the sd card and attach it back to pi, the pi will boot

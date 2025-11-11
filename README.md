@@ -9,3 +9,5 @@ made a new file, this file is just to get or know new commands, test them and if
 '''
 From a begineer level, these commands will help to learn how to use linux
 '''
+
+//Added the new commands if the git is not working properly
