@@ -1,1 +1,10 @@
-hello.txt
+# editor artifacts
+*~
+\#*\#
+.#*
+
+# macOS
+.DS_Store
+
+# misc
+*.log

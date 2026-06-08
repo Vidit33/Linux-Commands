@@ -1,13 +1,25 @@
-# Linux-Commands
-These are the different commands mostly use for linux. 
+# Linux Commands Reference
 
-all the new commands are added ranging from the basic linux commands to setting up github.
+A personal cheatsheet of Linux commands — from everyday terminal basics to Git workflow, SSH setup, Raspberry Pi configuration, and ESP32 hardware integration.
 
-I added new commands related on how to change the password on the pi if we forget the password of the Pi
+## Contents
 
-made a new file, this file is just to get or know new commands, test them and if they function properly then properly merge them into the main commands file
-'''
-From a begineer level, these commands will help to learn how to use linux
-'''
+| File | Description |
+|------|-------------|
+| [`commands.md`](commands.md) | Core Linux commands: navigation, file ops, permissions, processes, Git, SSH |
+| [`hardware.md`](hardware.md) | Hardware-specific: Raspberry Pi static IP, ESP32-P4 audio capture |
 
-//Added the new commands if the git is not working properly
+## Topics Covered
+
+- Terminal navigation and file management
+- Text output, grep, and piping
+- Process and disk management
+- SSH key generation and GitHub setup
+- Git workflow and branch management
+- Git SSH troubleshooting
+- Raspberry Pi password reset and health checks
+- ESP32-P4 serial audio recording
+
+## License
+
+[GPL-3.0](LICENSE)
