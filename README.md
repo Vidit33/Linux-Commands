@@ -21,6 +21,13 @@ A personal cheatsheet of Linux commands — from everyday terminal basics to Git
 - Raspberry Pi password reset and health checks
 - ESP32-P4 serial audio recording
 
+##Claude Recovery
+
+- export_chat.py = For Manually recovering a chat when you are inside the folder.
+- export_chat_hook.py = for automatically recovering the saved chats.
+
+
+
 ## License
 
 [GPL-3.0](LICENSE)
