@@ -27,8 +27,11 @@ A personal cheatsheet of Linux commands — from everyday terminal basics to Git
 - [export_chat_hook.py](export_chat_hook.py) = for automatically recovering the saved chats.
 
 ```bash
+#Setting up export_chat_hook.py
 -mkdir -p ~/.claude/hooks
+
 -cp export_chat_hook.py ~/.claude/hooks/export_chat_hook.py
+
 -Edit ~/.claude/settings.json and merge this hooks block in (don't wipe existing keys). If the file doesn't exist yet, create it with just this:
   {
     "hooks": {
@@ -48,7 +51,9 @@ A personal cheatsheet of Linux commands — from everyday terminal basics to Git
     } 
   } 
  If settings.json already has content, just add the "hooks" key alongside your existing ones (mind the commas).
+ 
 -python3 -c "import json; json.load(open('$HOME/.claude/settings.json')); print('valid')"
+
 -Hooks load at session startup, so new windows pick it up automatically.
  An already-open session needs a /hooks reload or restart.
  After your first turn, confirm it's working: ls ~/saved_chats/<project-folder-name>/ — you should see <mm-dd-yyyy>.md.
