@@ -7,7 +7,7 @@ A personal cheatsheet covering essential Linux commands — from basic navigatio
 ## Table of Contents
 
 - [Terminal Basics](#terminal-basics)
-- [Navigation](#navigation)
+- [Navigation](navigation)
 - [File Operations](#file-operations)
 - [File Content & Search](#file-content--search)
 - [Text & Output](#text--output)
@@ -238,11 +238,24 @@ git diff
 # Create a new branch
 git branch feature
 
+#List a new branch
+git branch(Lists local branches)
+
+#List Local and Remote branches
+git branch -a
+
 # Create and switch to a new branch
 git switch -c feature
 
 # Push a new branch to remote and set upstream
 git push -u origin feature
+
+##Delete a new branch that you created
+#Branch is Local
+git branch -d 'branch_name'
+#branch also exits in github
+git push origin --delete feature
+
 ```
 
 ### Troubleshooting: Switching remote from HTTPS to SSH
